@@ -58,16 +58,16 @@ public class PDFUtils {
 		params.put("name", "张三");//姓名
 		params.put("gender", "男");//性别
 		params.put("birthDate", "1990年01-01"); //出生日期
-		params.put("idNo", "14262519900101"); //身份证号码
+		params.put("idNo", "14262519902210101"); //身份证号码
 		params.put("maritalStatus", "已婚");//婚姻状况
 		params.put("eduLevel", "本科");//教育程度
 		params.put("residence", "居住地");//居住地
 		params.put("residenceOfID", "户籍所在地址");//户籍所在地址
-		params.put("cellPhone1", "18911216975");//手机号1
-		params.put("cellPhone2", "18911216975");//手机号2
-		params.put("company", "易诚网络");//现单位名称
-		params.put("comPhone", "010-8876576");//现单位电话
-		params.put("comAddress", "北京市西小口");//现单位地址
+		params.put("cellPhone1", "16457634562");//手机号1
+		params.put("cellPhone2", "16457634562");//手机号2
+		params.put("company", "公司名称");//现单位名称
+		params.put("comPhone", "010-7799576");//现单位电话
+		params.put("comAddress", "北京市故宫");//现单位地址
 		params.put("contactPeople1", "联系人1");//联系人1
 		params.put("relation1", "父子");//关系1
 		params.put("contactPhone1", "13366668888");//电话1
@@ -91,23 +91,23 @@ public class PDFUtils {
 
 	public static void dianziyanqian() throws FileNotFoundException {
 		HashMap<String, Object> params = new HashMap<String, Object>();// 建立参数表
-		params.put("repayCard","67676767676767676"); // 设置参数值
-		params.put("applyId", "1234567890");
-		params.put("applyDate", "2019年01-01");
-		params.put("repayCardBank", "招商银行");
-		params.put("name", "张三");
-		params.put("gender", "男");
-		params.put("birthDate", "1990年01-01");
-		params.put("idNo", "14262519900101");
-		params.put("maritalStatus", "已婚");
-		params.put("eduLevel", "本科");
-		params.put("residence", "居住地");
-		params.put("residenceOfID", "户籍所在地址");
-		params.put("cellPhone1", "18911216975");
-		params.put("cellPhone2", "18911216975");
-		params.put("company", "易诚网络");
-		params.put("comPhone", "010-8876576");
-		params.put("comAddress", "北京市西小口");
+		params.put("repayCard","67676767676767676"); // 还款借记卡号
+		params.put("applyId", "1234567890"); //申请编号
+		params.put("applyDate", "2019年01-01");//申请日期
+		params.put("repayCardBank", "招商银行");//开户行
+		params.put("name", "张三");//姓名
+		params.put("gender", "男");//性别
+		params.put("birthDate", "1990年01-01"); //出生日期
+		params.put("idNo", "14262519902210101"); //身份证号码
+		params.put("maritalStatus", "已婚");//婚姻状况
+		params.put("eduLevel", "本科");//教育程度
+		params.put("residence", "居住地");//居住地
+		params.put("residenceOfID", "户籍所在地址");//户籍所在地址
+		params.put("cellPhone1", "16457634562");//手机号1
+		params.put("cellPhone2", "16457634562");//手机号2
+		params.put("company", "公司名称");//现单位名称
+		params.put("comPhone", "010-7799576");//现单位电话
+		params.put("comAddress", "北京市故宫");//现单位地址
 		params.put("contactPeople1", "联系人1");
 		params.put("relation1", "父子");
 		params.put("contactPhone1", "13366668888");
@@ -134,9 +134,9 @@ public class PDFUtils {
 		// 生成pdf文件
 
         try {
-			//借贷
+
             PDFUtils.jiedai();
-			//电子验签
+
 			PDFUtils.dianziyanqian();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
